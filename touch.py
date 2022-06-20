@@ -3,7 +3,7 @@ from random import sample as s
 
 endure = ["耐える", "たえる"]
 make_new = ["新しくする", "あたらしくする"]
-smile = ["笑う", "わらうあ"]
+smile = ["笑う", "わらう"]
 
 while True:
     words = [endure, make_new, smile]
