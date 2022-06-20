@@ -5,7 +5,7 @@ endure = ["耐える", "たえる"]
 make_new = ["新しくする", "あたらしくする"]
 smile = ["笑う", "わらうあ"]
 
-words = [endure, make_new]
+words = [endure, make_new, smile]
 words = s(words, 1)
 key = words[0][0]
 value = words[0][1]
