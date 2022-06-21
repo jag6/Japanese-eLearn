@@ -15,15 +15,17 @@ def commendation():
 
 while True:
     words = [endure, be_apart, smile, maintain, praise]
-    words = s(words, 1)
-    key = words[0][0]
-    value = words[0][1]
-    print('What is', key, '?')
-    x = input()
-    if x == value:
-        commendation()
-        print('Now use', key, 'in a sentence')
+    while words:
+        r.shuffle(words)
+        word = words.pop(0)
+        key = word[0]
+        value = word[1]
+        print('What is', key, '?')
         x = input()
-        commendation()
-    else:
-        print('Wrong')
+        if x == value:
+            commendation()
+            print('Now use', key, 'in a sentence')
+            x = input()
+            commendation()
+        else:
+            print('Wrong')
