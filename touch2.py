@@ -1,4 +1,5 @@
 import random as r
+from random import sample as s
 
 def commendation():
     commendation = ['正しい！', 'はい、正解です！', '凄い！', '頭が良い！']
