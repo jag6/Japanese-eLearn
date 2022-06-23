@@ -8,16 +8,19 @@ def commendation():
         print(i)
 
 while True:
-    words = [[['endure', '耐える', 'たえる']],
-            [['be_apart', '離れる', 'はなれる']],
-            [['smile', '笑う', 'わらう']],
-            [['maintain', '保つ', 'たもつ']],
-            [['praise', '褒める', 'ほめる']]]
+    words = [['endure', '耐える', 'たえる'],
+            ['prevent', '防ぐ', 'ふせぐ'],
+            ['admit', '認める', 'みとめる'],
+            ['avoid', '避ける', 'さける'],
+            ['sad', '悲しい', 'かなし'],
+            ['advise', '勧める', 'すすめる'],
+            ['quit', '辞める', 'やめる'],
+            ['reget', '後悔する', 'こうかいする']]
     while words:
         r.shuffle(words)
         word = words.pop(0)
-        key = word[0][1]
-        value = word[0][2]
+        key = word[1]
+        value = word[2]
         print('What is', key, '?')
         x = input()
         if x == value:
