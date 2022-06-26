@@ -12,7 +12,7 @@ while True:
             ['prevent', '防ぐ', 'ふせぐ'],
             ['admit', '認める', 'みとめる'],
             ['avoid', '避ける', 'さける'],
-            ['sad', '悲しい', 'かなし'],
+            ['sad', '悲しい', 'かなしい'],
             ['advise', '勧める', 'すすめる'],
             ['quit', '辞める', 'やめる'],
             ['reget', '後悔する', 'こうかいする']]
@@ -29,4 +29,4 @@ while True:
             x = input()
             commendation()
         else:
-            print('Wrong')
+            print('Wrong', '(', value, ')')

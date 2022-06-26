@@ -24,4 +24,4 @@ while True:
         x = input()
         commendation()
     else:
-        print('Wrong')
+        print('Wrong', '(', value, ')')
