@@ -13,12 +13,14 @@ let words = [['endure', '耐える', 'たえる'],
             ['sad', '悲しい', 'かなしい'],
             ['advise', '勧める', 'すすめる'],
             ['quit', '辞める', 'やめる'],
-            ['reget', '後悔する', 'こうかいする']]
+            ['regret', '後悔する', 'こうかいする']];
 
 const practice = () => {
     try {
         words = shuffle(words);
+        let words2 = [];
         let word = words.pop();
+        words2.push(word);
         let key = word[1];
         let value = word[2];
         rl.question(`What is ${key} ? `, (input) => {
@@ -33,6 +35,9 @@ const practice = () => {
                 })
             }else {
                 console.log(`Wrong ${value}`);
+                for (let word of words2) {
+                    words.push(word);
+                }
                 practice();
             }
         });

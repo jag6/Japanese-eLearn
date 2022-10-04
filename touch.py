@@ -23,6 +23,6 @@ def practice():
             x = input()
             commendation()
         else:
-            print('Wrong', '(', value, ')')
+            print('Wrong', value)
 
 practice()

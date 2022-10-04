@@ -10,10 +10,12 @@ def practice():
                 ['sad', '悲しい', 'かなしい'],
                 ['advise', '勧める', 'すすめる'],
                 ['quit', '辞める', 'やめる'],
-                ['reget', '後悔する', 'こうかいする']]
+                ['regret', '後悔する', 'こうかいする']]
         while words:
+            words2 = []
             r.shuffle(words)
             word = words.pop(0)
+            words2.append(word)
             key = word[1]
             value = word[2]
             print('What is', key, '?')
@@ -27,6 +29,8 @@ def practice():
                 x = input()
                 commendation()
             else:
-                print('Wrong', '(', value, ')')
+                print('Wrong', value)
+                for word in words2:
+                    words.append(word)
 
 practice()
