@@ -1,4 +1,4 @@
-const { shuffle } = require('./commendation');
+const { shuffle, showCommendation } = require('./commendation');
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -21,8 +21,7 @@ const practice = () => {
             return rl.close();
         } 
         else if(input == value) {
-            shuffle(commendation);
-            console.log(commendation[0]);
+            showCommendation();
             practice();
         }else {
             console.log(`Wrong ${value}`);
